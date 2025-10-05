@@ -17,7 +17,7 @@
   }
   html,body{height:100%;margin:0;font-family:Inter,ui-sans-serif,system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;}
   body{
-    background: url('https://images.unsplash.com/photo-1723882620559-96bc6eef6603?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8a') center/cover no-repeat fixed;
+    background: url('assets/photo-1723882620559-96bc6eef6603.avif') center/cover no-repeat fixed;
     display:flex;align-items:center;justify-content:center;padding:28px;
     -webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;
   }
@@ -72,7 +72,7 @@
       <div class="actions">
         <!-- translate icon -->
         <button class="translate-btn" id="translateBtn" aria-label="Switch language" title="English">
-          <img src="https://e7.pngegg.com/pngimages/924/785/png-clipart-translation-google-translate-computer-icons-english-others-miscellaneous-angle.png" alt="translate">
+          <img src="assets/2479273.png" alt="translate">
         </button>
       </div>
     </div>
@@ -132,10 +132,10 @@
     <div style="display:flex;flex-direction:column;align-items:flex-start;gap:10px;margin-top:12px">
       <div class="socials" aria-label="social links">
         <a href="https://www.instagram.com/brake.labs/?__pwa=1" target="_blank" rel="noopener">
-          <img src="https://static.vecteezy.com/system/resources/previews/018/930/473/original/instagram-logo-instagram-icon-transparent-free-png.png" alt="Instagram — BRAKE Setups">
+          <img src="assets/R.png" alt="Instagram — BRAKE Setups">
         </a>
         <a href="https://www.tiktok.com/@brake.labs?is_from_webapp=1&sender_device=pc" target="_blank" rel="noopener">
-          <img src="https://static.vecteezy.com/system/resources/previews/021/460/265/original/tiktok-logo-transparent-free-png.png" alt="TikTok — BRAKE Setups">
+          <img src="assets/tiktok-logo-transparent-free-png.webp" alt="TikTok — BRAKE Setups">
         </a>
       </div>
 
@@ -167,5 +167,19 @@
     });
   })();
 </script>
+  <script>
+(function(){
+  const user = "mainpoint.contact";
+  const domain = "gmail.com";
+  const container = document.getElementById('email_link');
+  if(!container) return;
+  const link = document.createElement('a');
+  link.href = "mailto:" + user + "@" + domain;
+  link.textContent = user + "@" + domain;
+  container.innerHTML = "";
+  container.appendChild(link);
+})();
+</script>
 </body>
 </html>
+
